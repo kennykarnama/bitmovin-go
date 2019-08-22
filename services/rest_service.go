@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/bitmovin/bitmovin-go/bitmovin"
-	"github.com/bitmovin/bitmovin-go/models"
+	"github.com/iqbalnurhakim/bitmovin-go/bitmovin"
+	"github.com/iqbalnurhakim/bitmovin-go/models"
 )
 
 type RestService struct {

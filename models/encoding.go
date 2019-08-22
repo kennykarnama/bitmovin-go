@@ -1,7 +1,7 @@
 package models
 
 import (
-	"github.com/bitmovin/bitmovin-go/bitmovintypes"
+	"github.com/iqbalnurhakim/bitmovin-go/bitmovintypes"
 )
 
 type Infrastructure struct {

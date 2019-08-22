@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/bitmovin/bitmovin-go/bitmovin"
-	"github.com/bitmovin/bitmovin-go/models"
+	"github.com/iqbalnurhakim/bitmovin-go/bitmovin"
+	"github.com/iqbalnurhakim/bitmovin-go/models"
 	"strings"
 )
 

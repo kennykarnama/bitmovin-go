@@ -3,9 +3,9 @@ package services
 import (
 	"encoding/json"
 
-	"github.com/bitmovin/bitmovin-go/bitmovin"
-	"github.com/bitmovin/bitmovin-go/bitmovintypes"
-	"github.com/bitmovin/bitmovin-go/models"
+	"github.com/iqbalnurhakim/bitmovin-go/bitmovin"
+	"github.com/iqbalnurhakim/bitmovin-go/bitmovintypes"
+	"github.com/iqbalnurhakim/bitmovin-go/models"
 )
 
 const (

@@ -1,19 +1,20 @@
 # [![bitmovin](http://bitmovin-a.akamaihd.net/webpages/bitmovin-logo-github.png)](http://www.bitmovin.com)
+
 Golang-Client which enables you to seamlessly integrate the [Bitmovin API](https://bitmovin.com/video-infrastructure-service-bitmovin-api/) into your projects.
 Using this API client requires an active account. [Sign up for a Bitmovin API key](https://bitmovin.com/bitmovins-video-api/).
 
 The full [Bitmovin API reference](https://bitmovin.com/encoding-documentation/bitmovin-api/) can be found on our website.
 
-Installation 
-------------
- 
-Run `go get github.com/bitmovin/bitmovin-go`
+## Installation
+
+Run `go get github.com/iqbalnurhakim/bitmovin-go`
 
 Also feel free to use your favorite go dependency manager such as glide.
 
-Example
------
-The following example creates a simple transcoding job with a HTTP Input and a S3 Output ([create_simple_encoding.go](https://github.com/bitmovin/bitmovin-go/blob/master/examples/create_simple_encoding_dash.go)):
+## Example
+
+The following example creates a simple transcoding job with a HTTP Input and a S3 Output ([create_simple_encoding.go](https://github.com/iqbalnurhakim/bitmovin-go/blob/master/examples/create_simple_encoding_dash.go)):
+
 ```go
 package main
 
@@ -21,10 +22,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/bitmovin/bitmovin-go/bitmovin"
-	"github.com/bitmovin/bitmovin-go/bitmovintypes"
-	"github.com/bitmovin/bitmovin-go/models"
-	"github.com/bitmovin/bitmovin-go/services"
+	"github.com/iqbalnurhakim/bitmovin-go/bitmovin"
+	"github.com/iqbalnurhakim/bitmovin-go/bitmovintypes"
+	"github.com/iqbalnurhakim/bitmovin-go/models"
+	"github.com/iqbalnurhakim/bitmovin-go/services"
 )
 
 func main() {
@@ -314,9 +315,8 @@ func floatToPtr(f float64) *float64 {
 
 ```
 
-For more examples go to our [example page](https://github.com/bitmovin/bitmovin-go/tree/master/examples/).
+For more examples go to our [example page](https://github.com/iqbalnurhakim/bitmovin-go/tree/master/examples/).
 
-Contributing
-------------
+## Contributing
 
 bitmovin-go is licensed under the MIT license. If you want to contribute feel free to send Pull-Requests.

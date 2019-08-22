@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/bitmovin/bitmovin-go/bitmovin"
-	"github.com/bitmovin/bitmovin-go/models"
-	"github.com/bitmovin/bitmovin-go/services"
+	"github.com/iqbalnurhakim/bitmovin-go/bitmovin"
+	"github.com/iqbalnurhakim/bitmovin-go/models"
+	"github.com/iqbalnurhakim/bitmovin-go/services"
 )
 
 func main() {
