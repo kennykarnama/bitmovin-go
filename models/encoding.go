@@ -610,11 +610,20 @@ type ReuploadSettings struct {
 	MuxingInitFileInterval *float64 `json:"muxingInitFileInterval,omitempty"`
 }
 
+type AutoRestartConfiguration struct {
+	SegmentsWrittenTimeout     *float64 `json:"segmentsWrittenTimeout,omitempty"`
+	BytesWrittenTimeout        *float64 `json:"bytesWrittenTimeout,omitempty"`
+	FramesWrittenTimeout       *float64 `json:"framesWrittenTimeout,omitempty"`
+	HlsManifestsUpdateTimeout  *float64 `json:"hlsManifestsUpdateTimeout,omitempty"`
+	DashManifestsUpdateTimeout *float64 `json:"dashManifestsUpdateTimeout,omitempty"`
+}
+
 type LiveStreamConfiguration struct {
-	StreamKey        *string            `json:"streamKey,omitempty"`
-	HLSManifests     []LiveHLSManifest  `json:"hlsManifests,omitempty"`
-	DashManifests    []LiveDashManifest `json:"dashManifests,omitempty"`
-	ReuploadSettings ReuploadSettings   `json:"reuploadSettings,omitempty"`
+	StreamKey                *string                  `json:"streamKey,omitempty"`
+	HLSManifests             []LiveHLSManifest        `json:"hlsManifests,omitempty"`
+	DashManifests            []LiveDashManifest       `json:"dashManifests,omitempty"`
+	ReuploadSettings         ReuploadSettings         `json:"reuploadSettings,omitempty"`
+	AutoRestartConfiguration AutoRestartConfiguration `json:"autoRestartConfiguration,omitempty"`
 }
 
 type LiveStatusResult struct {
