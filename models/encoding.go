@@ -619,11 +619,12 @@ type AutoRestartConfiguration struct {
 }
 
 type LiveStreamConfiguration struct {
-	StreamKey                *string                  `json:"streamKey,omitempty"`
-	HLSManifests             []LiveHLSManifest        `json:"hlsManifests,omitempty"`
-	DashManifests            []LiveDashManifest       `json:"dashManifests,omitempty"`
-	ReuploadSettings         ReuploadSettings         `json:"reuploadSettings,omitempty"`
-	AutoRestartConfiguration AutoRestartConfiguration `json:"autoRestartConfiguration,omitempty"`
+	StreamKey                *string                    `json:"streamKey,omitempty"`
+	HLSManifests             []LiveHLSManifest          `json:"hlsManifests,omitempty"`
+	DashManifests            []LiveDashManifest         `json:"dashManifests,omitempty"`
+	ReuploadSettings         ReuploadSettings           `json:"reuploadSettings,omitempty"`
+	AutoRestartConfiguration AutoRestartConfiguration   `json:"autoRestartConfiguration,omitempty"`
+	LiveEncodingMode         bitmovintypes.EncodingMode `json:"liveEncodingMode,omitempty"`
 }
 
 type LiveStatusResult struct {
