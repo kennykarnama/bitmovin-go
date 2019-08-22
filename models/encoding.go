@@ -604,10 +604,17 @@ type StatusResponse struct {
 	Data      StatusData                   `json:"data,omitempty"`
 }
 
+type ReuploadSettings struct {
+	DashManifestInterval   *int64 `json:"dashManifestInterval,omitempty"`
+	HlsManifestInterval    *int64 `json:"hlsManifestInterval,omitempty"`
+	MuxingInitFileInterval *int64 `json:"muxingInitFileInterval,omitempty"`
+}
+
 type LiveStreamConfiguration struct {
-	StreamKey     *string            `json:"streamKey,omitempty"`
-	HLSManifests  []LiveHLSManifest  `json:"hlsManifests,omitempty"`
-	DashManifests []LiveDashManifest `json:"dashManifests,omitempty"`
+	StreamKey        *string            `json:"streamKey,omitempty"`
+	HLSManifests     []LiveHLSManifest  `json:"hlsManifests,omitempty"`
+	DashManifests    []LiveDashManifest `json:"dashManifests,omitempty"`
+	ReuploadSettings ReuploadSettings   `json:"reuploadSettings,omitempty"`
 }
 
 type LiveStatusResult struct {

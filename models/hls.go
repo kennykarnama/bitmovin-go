@@ -36,8 +36,9 @@ type HLSManifestResponse struct {
 }
 
 type LiveHLSManifest struct {
-	ManifestID *string  `json:"manifestId,omitempty"`
-	TimeShift  *float64 `json:"timeShift,omitempty"`
+	ManifestID     *string  `json:"manifestId,omitempty"`
+	TimeShift      *float64 `json:"timeShift,omitempty"`
+	LiveEdgeOffset *float64 `json:"liveEdgeOffset,omitempty"`
 }
 
 type HLSAudioGroupDefinition struct {
