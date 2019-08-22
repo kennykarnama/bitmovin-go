@@ -605,9 +605,9 @@ type StatusResponse struct {
 }
 
 type ReuploadSettings struct {
-	DashManifestInterval   *int64 `json:"dashManifestInterval,omitempty"`
-	HlsManifestInterval    *int64 `json:"hlsManifestInterval,omitempty"`
-	MuxingInitFileInterval *int64 `json:"muxingInitFileInterval,omitempty"`
+	DashManifestInterval   *float64 `json:"dashManifestInterval,omitempty"`
+	HlsManifestInterval    *float64 `json:"hlsManifestInterval,omitempty"`
+	MuxingInitFileInterval *float64 `json:"muxingInitFileInterval,omitempty"`
 }
 
 type LiveStreamConfiguration struct {
