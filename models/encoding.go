@@ -175,6 +175,7 @@ type TSMuxing struct {
 	Outputs              []Output                    `json:"outputs,omitempty"`
 	SegmentLength        *float64                    `json:"segmentLength,omitempty"`
 	SegmentNaming        *string                     `json:"segmentNaming,omitempty"`
+	StartOffset          *int                        `json:"startOffset,omitempty"`
 }
 
 type TSMuxingData struct {
